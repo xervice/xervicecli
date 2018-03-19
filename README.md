@@ -6,7 +6,8 @@ XerviceCli can be used to run helper functions.
 
 ***Install***
 ```
-composer require global xervice/xervicecli
+# Latest version
+composer global require xervice/xervicecli dev-master
 ```
 
 
