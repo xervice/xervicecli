@@ -2,4 +2,4 @@ composer.phar
 /vendor/
 /.idea
 !.gitkeep
-/src/Cache/*
+/tests/_support/_generated/*
