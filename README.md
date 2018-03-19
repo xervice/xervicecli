@@ -13,6 +13,10 @@ composer global require xervice/xervicecli dev-master
 
 ***Commands:***
 ```
-~/.composer/vendor/bin/xervice xervice:create:service <servicename> <namespace>
+# Create a new project structure
+~/.composer/vendor/bin/xervice xervice:create:project <projectname> <namespace>
+
+# Create a new service (run command in src directory)
+~/.composer/vendor/bin/xervice xervice:create:project <servicename> <namespace>
 ```
 
