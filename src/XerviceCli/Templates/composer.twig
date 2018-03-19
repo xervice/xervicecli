@@ -1,0 +1,29 @@
+{
+  "name"             : "{{ namespace|lower }}/{{ name|lower }}",
+  "license"          : "MIT",
+  "authors"          : [
+    {
+      "name" : "Author name",
+      "email": "author@email.de"
+    }
+  ],
+  "require-dev": {
+    "codeception/codeception": "*",
+    "symfony/var-dumper": "*"
+  },
+  "require": {
+    "php": ">=7.1.0",
+    "xervice/core": "^1.3.2",
+    "xervice/console": "^1.1.0",
+    "xervice/data-provider": "^1.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "{{ namespace }}Test\\": "tests/{{ namespace }}/",
+      "DataProvider\\": "src/Generated/"
+    },
+    "psr-0": {
+      "{{ namespace }}\\": "src/{{ namespace }}",
+    }
+  }
+}
