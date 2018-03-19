@@ -1,4 +1,5 @@
 <?php
+
 namespace XerviceTest\XerviceCli\Generator;
 
 use Xervice\Core\Locator\Dynamic\DynamicLocator;
@@ -21,6 +22,35 @@ class IntegrationTest extends \Codeception\Test\Unit
      */
     public function testServiceGenerator()
     {
+        $this->getFacade()->createNewProject('UnitTest', 'TestNamespace');
+        $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
+
+        $this->rrmdir(getcwd() . '/UnitTest');
+
         $this->getFacade()->createNewService('UnitTest', 'TestNamespace');
+        $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
+
+        $this->rrmdir(getcwd() . '/UnitTest');
+    }
+
+    /**
+     * @param $dir
+     */
+    private function rrmdir($dir)
+    {
+        if (\is_dir($dir)) {
+            $objects = \scandir($dir);
+            foreach ($objects as $object) {
+                if ($object != "." && $object != "..") {
+                    if (\is_dir($dir . "/" . $object)) {
+                        $this->rrmdir($dir . "/" . $object);
+                    }
+                    else {
+                        \unlink($dir . "/" . $object);
+                    }
+                }
+            }
+            \rmdir($dir);
+        }
     }
 }

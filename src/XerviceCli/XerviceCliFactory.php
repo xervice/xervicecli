@@ -6,6 +6,7 @@ namespace Xervice\XerviceCli;
 
 use Symfony\Component\Console\Output\Output;
 use Xervice\Core\Factory\AbstractFactory;
+use Xervice\XerviceCli\Generator\ProjectGenerator;
 use Xervice\XerviceCli\Generator\ServiceGenerator;
 use Xervice\XerviceCli\Twig\Renderer;
 
@@ -24,6 +25,23 @@ class XerviceCliFactory extends AbstractFactory
     public function getServicGenerator(string $name, string $namespace, Output $messenger = null)
     {
         return new ServiceGenerator(
+            $name,
+            $namespace,
+            $this->createTwigRenderer(),
+            $messenger
+        );
+    }
+
+    /**
+     * @param string $name
+     * @param string $namespace
+     * @param \Symfony\Component\Console\Output\Output|null $messenger
+     *
+     * @return \Xervice\XerviceCli\Generator\ProjectGenerator
+     */
+    public function getProjectGenerator(string $name, string $namespace, Output $messenger = null)
+    {
+        return new ProjectGenerator(
             $name,
             $namespace,
             $this->createTwigRenderer(),

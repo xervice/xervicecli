@@ -5,7 +5,8 @@ namespace App\Console;
 
 
 use Xervice\Console\ConsoleDependencyProvider as XerviceConsoleDependencyProvider;
-use Xervice\XerviceCli\Command\XerviceCreataServiceCommand;
+use Xervice\XerviceCli\Command\XerviceCreateProjectCommand;
+use Xervice\XerviceCli\Command\XerviceCreateServiceCommand;
 
 class ConsoleDependencyProvider extends XerviceConsoleDependencyProvider
 {
@@ -15,7 +16,8 @@ class ConsoleDependencyProvider extends XerviceConsoleDependencyProvider
     protected function getCommandList(): array
     {
         return [
-            new XerviceCreataServiceCommand()
+            new XerviceCreateServiceCommand(),
+            new XerviceCreateProjectCommand()
         ];
     }
 
