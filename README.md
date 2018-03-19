@@ -13,6 +13,6 @@ composer global require xervice/xervicecli dev-master
 
 ***Commands:***
 ```
-xervicecli xervice:create:service <servicename> <namespace>
+~/.composer/vendor/bin/xervice xervice:create:service <servicename> <namespace>
 ```
 
