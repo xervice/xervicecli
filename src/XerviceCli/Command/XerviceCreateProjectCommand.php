@@ -17,7 +17,7 @@ class XerviceCreateProjectCommand extends AbstractCommand
             ->setName('xervice:create:project')
             ->setDescription('Create new basic Xervice project with one example service structure')
             ->addArgument('name', InputArgument::REQUIRED, 'Your new project name')
-            ->addArgument('namespace', InputArgument::OPTIONAL, 'Namespace of your service', 'Xervice');
+            ->addArgument('namespace', InputArgument::OPTIONAL, 'Namespace of your service', 'App');
     }
 
     /**

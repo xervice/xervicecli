@@ -17,7 +17,7 @@ class XerviceCreateServiceCommand extends AbstractCommand
             ->setName('xervice:create:service')
             ->setDescription('Create new basic Xervice service')
             ->addArgument('name', InputArgument::REQUIRED, 'Your new service name')
-            ->addArgument('namespace', InputArgument::OPTIONAL, 'Namespace of your service', 'Xervice');
+            ->addArgument('namespace', InputArgument::OPTIONAL, 'Namespace of your service', 'App');
     }
 
     /**
