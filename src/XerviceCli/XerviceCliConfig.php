@@ -14,7 +14,7 @@ class XerviceCliConfig extends AbstractConfig
     public function getTwigConfig()
     {
         return [
-            'cache' => $this->getCachePath()
+            'cache' => false
         ];
     }
 
