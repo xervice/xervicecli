@@ -13,18 +13,17 @@
   },
   "require": {
     "php": ">=7.1.0",
-    "xervice/core": "^1.3.2",
-    "xervice/console": "^1.1.0",
+    "xervice/core": "^1.0.0",
+    "xervice/console": "^1.0.0",
     "twig/twig": "^2.4.6"
   },
   "autoload": {
     "psr-4": {
-      "Xervice\\": "src/",
       "XerviceTest\\": "tests/Xervice/",
       "DataProvider\\": "src/Generated/"
     },
     "psr-0": {
-      "App\\": "src/"
+      "Xervice\\": "src/"
     }
   }
 }
