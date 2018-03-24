@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6ef581d5b182b529d89bfcea3bf1feed",
+    "content-hash": "d7e74d8f0e94273141da40024e7eb1d1",
     "packages": [
         {
             "name": "nette/php-generator",
@@ -625,16 +625,16 @@
         },
         {
             "name": "xervice/data-provider",
-            "version": "1.1.1",
+            "version": "1.0.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/xervice/data-provider.git",
-                "reference": "1a840394ca271d943d380b92e19e3803dbb7c886"
+                "reference": "e7abd6f2802e8e9da03697a8ae8f1ecd671b3d83"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xervice/data-provider/zipball/1a840394ca271d943d380b92e19e3803dbb7c886",
-                "reference": "1a840394ca271d943d380b92e19e3803dbb7c886",
+                "url": "https://api.github.com/repos/xervice/data-provider/zipball/e7abd6f2802e8e9da03697a8ae8f1ecd671b3d83",
+                "reference": "e7abd6f2802e8e9da03697a8ae8f1ecd671b3d83",
                 "shasum": ""
             },
             "require": {
@@ -668,7 +668,7 @@
                     "email": "contact@mibexx.de"
                 }
             ],
-            "time": "2018-03-24T09:49:37+00:00"
+            "time": "2018-03-24T10:24:38+00:00"
         }
     ],
     "packages-dev": [
