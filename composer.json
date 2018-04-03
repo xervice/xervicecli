@@ -13,9 +13,9 @@
   },
   "require": {
     "php": ">=7.1.0",
-    "xervice/core": "^1.0.0",
-    "xervice/console": "^1.0.0",
-    "xervice/data-provider": "^1.0.1",
+    "xervice/core": "dev-master",
+    "xervice/console": "dev-master",
+    "xervice/data-provider": "dev-master",
     "twig/twig": "^2.4.6"
   },
   "autoload": {
