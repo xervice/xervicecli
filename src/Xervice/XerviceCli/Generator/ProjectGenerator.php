@@ -48,8 +48,9 @@ class ProjectGenerator extends AbstractGenerator
         return [
             "{$this->name}/composer.json"                                                            => 'composer.twig',
             "{$this->name}/codeception.yml"                                                          => 'codeception.twig',
-            "{$this->name}/.scrutinizer.yml"                                                         => '.scrutinizer.yml',
+            "{$this->name}/.scrutinizer.yml"                                                         => '.scrutinizer.twig',
             "{$this->name}/.gitignore"                                                               => 'gitignore.twig',
+            "{$this->name}/config/config_default.php"                                                => 'Config/config_default.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Client.php"             => 'Service/ServiceClient.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Config.php"             => 'Service/ServiceConfig.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}DependencyProvider.php" => 'Service/ServiceDependencyProvider.twig',
