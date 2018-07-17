@@ -40,7 +40,6 @@ class ProjectGenerator extends AbstractGenerator
     }
 
 
-
     /**
      * @return array
      */
@@ -49,6 +48,7 @@ class ProjectGenerator extends AbstractGenerator
         return [
             "{$this->name}/composer.json"                                                            => 'composer.twig',
             "{$this->name}/codeception.yml"                                                          => 'codeception.twig',
+            "{$this->name}/.scrutinizer.yml"                                                         => '.scrutinizer.yml',
             "{$this->name}/.gitignore"                                                               => 'gitignore.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Client.php"             => 'Service/ServiceClient.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Config.php"             => 'Service/ServiceConfig.twig',

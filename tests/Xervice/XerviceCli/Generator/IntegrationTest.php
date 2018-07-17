@@ -13,6 +13,12 @@ class IntegrationTest extends \Codeception\Test\Unit
      */
     protected $tester;
 
+    protected function _after(): void
+    {
+        $this->rrmdir(getcwd() . '/UnitTest');
+    }
+
+
     /**
      * @group Xervice
      * @group XerviceCli
@@ -24,13 +30,12 @@ class IntegrationTest extends \Codeception\Test\Unit
     {
         $this->getFacade()->createNewProject('UnitTest', 'TestNamespace');
         $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
+        $this->assertTrue(is_file(getcwd() . '/UnitTest/.scrutinizer.yml'));
 
         $this->rrmdir(getcwd() . '/UnitTest');
 
         $this->getFacade()->createNewService('UnitTest', 'TestNamespace');
         $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
-
-        $this->rrmdir(getcwd() . '/UnitTest');
     }
 
     /**
