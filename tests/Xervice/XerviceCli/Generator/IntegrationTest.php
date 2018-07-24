@@ -31,6 +31,8 @@ class IntegrationTest extends \Codeception\Test\Unit
         $this->getFacade()->createNewProject('UnitTest', 'TestNamespace');
         $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
         $this->assertTrue(is_file(getcwd() . '/UnitTest/.scrutinizer.yml'));
+        $this->assertTrue(is_file(getcwd() . '/UnitTest/.travis.yml'));
+        $this->assertTrue(is_file(getcwd() . '/UnitTest/README.md'));
         $this->assertTrue(is_file(getcwd() . '/UnitTest/config/config_default.php'));
 
         $this->rrmdir(getcwd() . '/UnitTest');
