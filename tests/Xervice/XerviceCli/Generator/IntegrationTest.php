@@ -37,7 +37,7 @@ class IntegrationTest extends \Codeception\Test\Unit
 
         $this->rrmdir(getcwd() . '/UnitTest');
 
-        $this->getFacade()->createNewService('UnitTest', 'TestNamespace');
+        $this->getFacade()->createNewService('Unit-Test', 'TestNamespace');
         $this->assertTrue(is_dir(getcwd() . '/UnitTest'));
     }
 

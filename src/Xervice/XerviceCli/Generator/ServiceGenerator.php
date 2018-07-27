@@ -17,6 +17,11 @@ class ServiceGenerator extends AbstractGenerator
     /**
      * @var string
      */
+    private $origName;
+
+    /**
+     * @var string
+     */
     private $namespace;
 
     /**
@@ -33,7 +38,8 @@ class ServiceGenerator extends AbstractGenerator
         Renderer $renderer,
         Output $messenger = null
     ) {
-        $this->name = $name;
+        $this->origName = $name;
+        $this->name = str_replace('-', '', $name);
         $this->namespace = $namespace;
 
         parent::__construct($renderer, $messenger);
@@ -62,6 +68,7 @@ class ServiceGenerator extends AbstractGenerator
     {
         return [
             'name'      => $this->name,
+            'origname'  => $this->origName,
             'namespace' => $this->namespace
         ];
     }

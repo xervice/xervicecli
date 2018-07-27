@@ -17,6 +17,11 @@ class ProjectGenerator extends AbstractGenerator
     /**
      * @var string
      */
+    private $origName;
+
+    /**
+     * @var string
+     */
     private $namespace;
 
     /**
@@ -33,7 +38,8 @@ class ProjectGenerator extends AbstractGenerator
         Renderer $renderer,
         Output $messenger = null
     ) {
-        $this->name = $name;
+        $this->origName = $name;
+        $this->name = str_replace('-', '', $name);
         $this->namespace = $namespace;
 
         parent::__construct($renderer, $messenger);
@@ -70,6 +76,7 @@ class ProjectGenerator extends AbstractGenerator
     {
         return [
             'name'      => $this->name,
+            'origname'  => $this->origName,
             'namespace' => $this->namespace
         ];
     }
