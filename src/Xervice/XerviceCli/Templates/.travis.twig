@@ -6,12 +6,13 @@ php:
 
 before_install:
   - composer global require hirak/prestissimo
+  - composer global require xervice/xervicecli
 
 install:
   - composer install --no-progress --profile
 
 script:
-  - vendor/bin/xervice da:ge
+  - ~/.composer/vendor/bin/xervice da:ge
   - vendor/bin/codecept run --coverage --coverage-xml
 
 after_success:
