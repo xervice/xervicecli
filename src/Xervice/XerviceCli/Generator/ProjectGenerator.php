@@ -53,6 +53,8 @@ class ProjectGenerator extends AbstractGenerator
             "{$this->name}/.gitignore"                                                               => 'gitignore.twig',
             "{$this->name}/README.md"                                                                => 'README.twig',
             "{$this->name}/config/config_default.php"                                                => 'Config/config_default.twig',
+            "{$this->name}/tests/.gitkeep"                                                           => '.gitkeep',
+            "{$this->name}/src/Generated/.gitkeep"                                                   => '.gitkeep',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Client.php"             => 'Service/ServiceClient.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Config.php"             => 'Service/ServiceConfig.twig',
             "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}DependencyProvider.php" => 'Service/ServiceDependencyProvider.twig',
