@@ -52,20 +52,20 @@ class ProjectGenerator extends AbstractGenerator
     protected function getTemplates(): array
     {
         return [
-            "{$this->name}/composer.json"                                                            => 'composer.twig',
-            "{$this->name}/codeception.yml"                                                          => 'codeception.twig',
-            "{$this->name}/.scrutinizer.yml"                                                         => '.scrutinizer.twig',
-            "{$this->name}/.travis.yml"                                                              => '.travis.twig',
-            "{$this->name}/.gitignore"                                                               => 'gitignore.twig',
-            "{$this->name}/README.md"                                                                => 'README.twig',
-            "{$this->name}/config/config_default.php"                                                => 'Config/config_default.twig',
-            "{$this->name}/tests/.gitkeep"                                                           => '.gitkeep',
-            "{$this->name}/src/Generated/.gitkeep"                                                   => '.gitkeep',
-            "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Client.php"             => 'Service/ServiceClient.twig',
-            "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Config.php"             => 'Service/ServiceConfig.twig',
-            "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}DependencyProvider.php" => 'Service/ServiceDependencyProvider.twig',
-            "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Facade.php"             => 'Service/ServiceFacade.twig',
-            "{$this->name}/src/{$this->namespace}/{$this->name}/{$this->name}Factory.php"            => 'Service/ServiceFactory.twig',
+            "{$this->origName}/composer.json"                                                            => 'composer.twig',
+            "{$this->origName}/codeception.yml"                                                          => 'codeception.twig',
+            "{$this->origName}/.scrutinizer.yml"                                                         => '.scrutinizer.twig',
+            "{$this->origName}/.travis.yml"                                                              => '.travis.twig',
+            "{$this->origName}/.gitignore"                                                               => 'gitignore.twig',
+            "{$this->origName}/README.md"                                                                => 'README.twig',
+            "{$this->origName}/config/config_default.php"                                                => 'Config/config_default.twig',
+            "{$this->origName}/tests/.gitkeep"                                                           => '.gitkeep',
+            "{$this->origName}/src/Generated/.gitkeep"                                                   => '.gitkeep',
+            "{$this->origName}/src/{$this->namespace}/{$this->name}/{$this->name}Client.php"             => 'Service/ServiceClient.twig',
+            "{$this->origName}/src/{$this->namespace}/{$this->name}/{$this->name}Config.php"             => 'Service/ServiceConfig.twig',
+            "{$this->origName}/src/{$this->namespace}/{$this->name}/{$this->name}DependencyProvider.php" => 'Service/ServiceDependencyProvider.twig',
+            "{$this->origName}/src/{$this->namespace}/{$this->name}/{$this->name}Facade.php"             => 'Service/ServiceFacade.twig',
+            "{$this->origName}/src/{$this->namespace}/{$this->name}/{$this->name}Factory.php"            => 'Service/ServiceFactory.twig',
         ];
     }
 
