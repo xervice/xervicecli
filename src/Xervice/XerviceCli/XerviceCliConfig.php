@@ -4,7 +4,7 @@
 namespace Xervice\XerviceCli;
 
 
-use Xervice\Core\Config\AbstractConfig;
+use Xervice\Core\Business\Model\Config\AbstractConfig;
 
 class XerviceCliConfig extends AbstractConfig
 {
@@ -31,6 +31,6 @@ class XerviceCliConfig extends AbstractConfig
      */
     public function getTemplatePath()
     {
-        return __DIR__ . '/Templates';
+        return __DIR__ . '/Presentation/Templates';
     }
 }

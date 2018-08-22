@@ -2,11 +2,11 @@
 
 namespace XerviceTest\XerviceCli\Generator;
 
-use Xervice\Core\Locator\Dynamic\DynamicLocator;
+use Xervice\Core\Business\Model\Locator\Dynamic\Business\DynamicBusinessLocator;
 
 class IntegrationTest extends \Codeception\Test\Unit
 {
-    use DynamicLocator;
+    use DynamicBusinessLocator;
 
     /**
      * @var \XerviceTest\XerviceTester

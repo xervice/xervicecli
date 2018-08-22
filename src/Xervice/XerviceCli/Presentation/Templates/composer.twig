@@ -1,34 +1,33 @@
 {
-  "name"             : "xervice/xervicecli",
+  "name"             : "{{ namespace|lower }}/{{ origname|lower }}",
   "license"          : "MIT",
   "authors"          : [
     {
-      "name" : "Mike Bertram",
-      "email": "contact@mibexx.de"
+      "name" : "Author name",
+      "email": "author@email.de"
     }
   ],
   "require-dev": {
     "codeception/codeception": "*",
     "symfony/var-dumper": "*",
-    "phpstan/phpstan": "^0.9.0"
+    "phpstan/phpstan": "*"
   },
   "require": {
     "php": ">=7.1.0",
-    "xervice/core": "^4.0.0",
-    "xervice/data-provider": "^2.0.0",
-    "twig/twig": "^2.4.6"
+    "xervice/core": "^4.0.0"
+    "xervice/data-provider": "^2.0.0"
   },
   "autoload": {
     "psr-4": {
       "DataProvider\\": "src/Generated/"
     },
     "psr-0": {
-      "Xervice\\": "src/"
+      "{{ namespace }}\\": "src/"
     }
   },
   "autoload-dev": {
     "psr-4": {
-      "XerviceTest\\": "tests/Xervice/"
+      "{{ namespace }}Test\\": "tests/{{ namespace }}/"
     }
   },
   "scripts": {
