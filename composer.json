@@ -23,7 +23,8 @@
       "DataProvider\\": "src/Generated/"
     },
     "psr-0": {
-      "Xervice\\": "src/"
+      "Xervice\\": "src/",
+      "XerviceCli\\": "src/"
     }
   },
   "autoload-dev": {

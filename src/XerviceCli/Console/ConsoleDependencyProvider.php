@@ -1,14 +1,14 @@
 <?php
 
 
-namespace NexusCli\Console;
+namespace XerviceCli\Console;
 
 
 use Xervice\Console\ConsoleDependencyProvider as XerviceConsoleDependencyProvider;
 use Xervice\DataProvider\Communication\Console\CleanCommand;
 use Xervice\DataProvider\Communication\Console\GenerateCommand;
-use Xervice\XerviceCli\Command\XerviceCreateProjectCommand;
-use Xervice\XerviceCli\Command\XerviceCreateServiceCommand;
+use Xervice\XerviceCli\Communication\Console\Command\XerviceCreateProjectCommand;
+use Xervice\XerviceCli\Communication\Console\Command\XerviceCreateServiceCommand;
 
 class ConsoleDependencyProvider extends XerviceConsoleDependencyProvider
 {

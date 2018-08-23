@@ -498,12 +498,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xervice/console.git",
-                "reference": "37a475e6533818fea38dbf305109248c68000b17"
+                "reference": "017b80d78c74fee6e918c6643530699706eb289d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xervice/console/zipball/37a475e6533818fea38dbf305109248c68000b17",
-                "reference": "37a475e6533818fea38dbf305109248c68000b17",
+                "url": "https://api.github.com/repos/xervice/console/zipball/017b80d78c74fee6e918c6643530699706eb289d",
+                "reference": "017b80d78c74fee6e918c6643530699706eb289d",
                 "shasum": ""
             },
             "require": {
@@ -534,7 +534,7 @@
                     "email": "contact@mibexx.de"
                 }
             ],
-            "time": "2018-08-22T06:57:32+00:00"
+            "time": "2018-08-23T09:19:06+00:00"
         },
         {
             "name": "xervice/core",
@@ -542,12 +542,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/xervice/core.git",
-                "reference": "9661c47cfc6fb3b81e2b72d58e33ddf096bd914f"
+                "reference": "eb43e3be146470755b617e060fcf638a24cddf46"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/xervice/core/zipball/9661c47cfc6fb3b81e2b72d58e33ddf096bd914f",
-                "reference": "9661c47cfc6fb3b81e2b72d58e33ddf096bd914f",
+                "url": "https://api.github.com/repos/xervice/core/zipball/eb43e3be146470755b617e060fcf638a24cddf46",
+                "reference": "eb43e3be146470755b617e060fcf638a24cddf46",
                 "shasum": ""
             },
             "require": {
@@ -580,7 +580,7 @@
                 }
             ],
             "description": "Xervice core functionality",
-            "time": "2018-08-21T19:00:30+00:00"
+            "time": "2018-08-22T10:16:57+00:00"
         },
         {
             "name": "xervice/data-provider",

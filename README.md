@@ -4,14 +4,28 @@ XerviceCli
 XerviceCli can be used to run helper functions.  
 
 
-***Install***
+Install
+----------
 ```
 # Latest version
 composer global require xervice/xervicecli dev-master
 ```
 
 
-***Commands:***
+Configuration
+-----------------
+You have to add the ProjectNamespace "XerviceCli":
+```php
+use Xervice\Core\CoreConfig;
+
+$config[CoreConfig::PROJECT_NAMESPACES] = [
+    'XerviceCli'
+];
+```
+
+
+Usage
+-----------
 ```
 # Create a new project structure
 ~/.composer/vendor/bin/xervice xervice:create:project <projectname> <namespace>
