@@ -1,11 +1,7 @@
 <?php
 
-use Xervice\Core\CoreConfig;
 use Xervice\DataProvider\DataProviderConfig;
 
-$config[CoreConfig::PROJECT_NAMESPACES] = [
-    'XerviceCli'
-];
 
 $config[DataProviderConfig::DATA_PROVIDER_GENERATED_PATH] = dirname(__DIR__) . '/src/Generated';
 $config[DataProviderConfig::DATA_PROVIDER_PATHS] = [

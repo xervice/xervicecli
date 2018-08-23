@@ -1,7 +1,7 @@
 <?php
 
 
-namespace XerviceCli\Console;
+namespace App\Console;
 
 
 use Xervice\Console\ConsoleDependencyProvider as XerviceConsoleDependencyProvider;

@@ -24,7 +24,7 @@
     },
     "psr-0": {
       "Xervice\\": "src/",
-      "XerviceCli\\": "src/"
+      "App\\": "src/"
     }
   },
   "autoload-dev": {
